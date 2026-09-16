@@ -226,7 +226,6 @@ document.addEventListener('DOMContentLoaded', function () {
   if (contactForm) {
     var formStatus = document.getElementById('formStatus');
     contactForm.addEventListener('submit', function (e) {
-      e.preventDefault();
       var name = contactForm.querySelector('#name');
       var email = contactForm.querySelector('#email');
       var message = contactForm.querySelector('#message');
@@ -248,13 +247,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
       if (!formStatus) return;
       if (!valid) {
+        e.preventDefault();
         formStatus.textContent = 'Please fill in all required fields with a valid email address.';
         formStatus.className = 'mt-4 text-sm font-medium text-red-600';
         return;
       }
-      formStatus.textContent = 'Thank you — your message has been noted. Our team will get back to you shortly.';
-      formStatus.className = 'mt-4 text-sm font-medium text-green-700';
-      contactForm.reset();
     });
   }
 
