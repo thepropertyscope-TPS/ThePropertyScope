@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>News &amp; Insights | The PropertyScope</title>
+<meta name="description" content="Latest real estate news, market intelligence, investment insights, property developments and activities from The PropertyScope.">
+<link rel="icon" href="images/logo.jpeg" type="image/jpeg">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          kpmblue: '#0b6aa2', kpmbluedark: '#084d78', kpmnavy: '#0a2e47',
+          kpmblack: '#1a1a1a', kpmred: '#9c2b26', kpmredlight: '#c23a30', kpmcream: '#f7f8fa'
+        },
+        fontFamily: { display: ['Poppins', 'sans-serif'], sans: ['Inter', 'sans-serif'] }
+      }
+    }
+  }
+</script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="antialiased text-kpmblack" data-news-page>
+
+<!-- ============ HEADER ============ -->
+<header id="siteHeader" class="site-header fixed top-0 left-0 right-0 z-50">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="flex items-center justify-between h-20">
+      <a href="index.html" class="flex items-center shrink-0">
+        <img src="images/logo.jpeg" alt="The PropertyScope logo" class="logo-img">
+      </a>
+      <nav class="hidden lg:flex items-center gap-9 font-display font-medium text-[15px]">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="services.html" class="nav-link">Our Services</a>
+        <a href="news.html" class="nav-link active">News &amp; Insights</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="contact.html" class="nav-link">Contact Us</a>
+      </nav>
+      <a href="contact.html" class="hidden lg:inline-flex btn btn-blue !py-3 !px-6 !text-sm">Get In Touch</a>
+      <button id="navToggle" aria-label="Toggle menu" aria-expanded="false" class="lg:hidden text-kpmnavy p-2">
+        <svg id="iconMenuOpen" class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        <svg id="iconMenuClose" class="w-7 h-7 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <div id="mobileMenu" class="lg:hidden">
+      <nav class="flex flex-col gap-1 pb-5 font-display font-medium text-[15px] border-t border-gray-100 pt-3">
+        <a href="index.html" class="nav-link py-2">Home</a>
+        <a href="about.html" class="nav-link py-2">About Us</a>
+        <a href="services.html" class="nav-link py-2">Our Services</a>
+        <a href="news.html" class="nav-link active py-2">News &amp; Insights</a>
+        <a href="gallery.html" class="nav-link py-2">Gallery</a>
+        <a href="contact.html" class="nav-link py-2">Contact Us</a>
+        <a href="contact.html" class="btn btn-blue !py-3 !px-6 !text-sm mt-2 w-fit">Get In Touch</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<!-- ============ PAGE BANNER ============ -->
+<section class="page-banner h-[46vh] min-h-[340px] mt-20 relative flex items-center">
+  <img src="images/optimized/image1.jpg" alt="Aerial view of a residential neighbourhood" class="absolute inset-0">
+  <div class="relative z-10 max-w-7xl mx-auto px-5 sm:px-8 w-full">
+    <p class="text-kpmredlight font-display font-semibold text-sm mb-3 tracking-wide">THE PROPERTYSCOPE JOURNAL</p>
+    <h1 class="font-display font-extrabold text-4xl sm:text-5xl text-white">News &amp; Insights</h1>
+    <p class="text-gray-100 max-w-2xl mt-5 leading-relaxed">Stay informed with real estate news, market intelligence, investment insights, property developments, and activities from The PropertyScope.</p>
+  </div>
+</section>
+
+<!-- ============ FEATURED STORY ============ -->
+<section class="py-16 sm:py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="flex items-end justify-between gap-5 mb-8 reveal">
+      <div>
+        <p class="section-label text-kpmred font-display font-semibold text-sm mb-3">FEATURED STORY</p>
+        <h2 class="font-display font-bold text-3xl text-kpmnavy">A closer look at the market</h2>
+      </div>
+      <a href="#latest-stories" class="hidden sm:inline-flex text-kpmblue font-semibold text-sm">Browse all stories</a>
+    </div>
+    <article class="grid lg:grid-cols-2 bg-kpmcream rounded-xl overflow-hidden reveal">
+      <div class="min-h-[280px] lg:min-h-[420px]">
+        <img src="images/optimized/image7.jpg" alt="Contemporary residential architecture" class="w-full h-full object-cover">
+      </div>
+      <div class="p-8 sm:p-12 flex flex-col justify-center">
+        <p class="text-kpmred font-display font-semibold text-xs tracking-[0.16em] mb-4">MARKET INTELLIGENCE</p>
+        <h2 class="font-display font-bold text-2xl sm:text-3xl text-kpmnavy leading-tight mb-4">Reading the signals behind a changing property market</h2>
+        <p class="text-gray-600 leading-relaxed mb-6">A practical editorial look at the questions buyers, developers, and investors can ask when assessing property opportunities in a changing market.</p>
+        <div class="flex items-center justify-between gap-4 text-sm text-gray-500 mb-7">
+          <time datetime="2026-09-17">September 17, 2026</time>
+          <span>The PropertyScope Editorial Team</span>
+        </div>
+        <button type="button" class="btn btn-primary w-fit" data-article-id="market-signals">Read More</button>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ STORIES ============ -->
+<section id="latest-stories" class="py-16 sm:py-20 bg-kpmcream">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-7 mb-10 reveal">
+      <div>
+        <p class="section-label text-kpmred font-display font-semibold text-sm mb-3">LATEST STORIES</p>
+        <h2 class="font-display font-bold text-3xl sm:text-4xl text-kpmnavy">Useful context for property decisions</h2>
+      </div>
+      <label class="relative w-full lg:w-80">
+        <span class="sr-only">Search news and insights</span>
+        <input id="newsSearch" type="search" placeholder="Search news and insights..." class="news-search w-full" autocomplete="off">
+        <svg class="absolute right-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 pointer-events-none" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path stroke-linecap="round" d="m16.5 16.5 4 4"/></svg>
+      </label>
+    </div>
+    <div class="flex flex-wrap gap-3 mb-10 reveal" role="group" aria-label="Filter stories by category">
+      <button type="button" class="filter-chip active-chip" data-news-filter="all">All</button>
+      <button type="button" class="filter-chip" data-news-filter="Real Estate News">Real Estate News</button>
+      <button type="button" class="filter-chip" data-news-filter="Market Intelligence">Market Intelligence</button>
+      <button type="button" class="filter-chip" data-news-filter="Investment Insights">Investment Insights</button>
+      <button type="button" class="filter-chip" data-news-filter="Property &amp; Housing">Property &amp; Housing</button>
+      <button type="button" class="filter-chip" data-news-filter="PropertyScope Activities">PropertyScope Activities</button>
+    </div>
+    <div id="newsGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-7" aria-live="polite"></div>
+    <p id="newsEmpty" class="hidden text-center text-gray-500 py-12">No stories match your search.</p>
+  </div>
+</section>
+
+<!-- ============ NEWSLETTER CTA ============ -->
+<section class="bg-kpmnavy py-16">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 flex flex-wrap items-center justify-between gap-8">
+    <div class="max-w-2xl reveal">
+      <p class="section-label text-kpmredlight font-display font-semibold text-sm mb-3">KEEP IN TOUCH</p>
+      <h2 class="font-display font-bold text-2xl sm:text-3xl text-white mb-3">Have a story, listing, or market question?</h2>
+      <p class="text-gray-300">Talk to the PropertyScope team about editorial coverage, research, or property marketing.</p>
+    </div>
+    <a href="contact.html" class="btn btn-primary reveal">Contact Our Team</a>
+  </div>
+</section>
+
+<!-- ============ ARTICLE MODAL ============ -->
+<div id="articleModal" class="article-modal" aria-hidden="true">
+  <div class="article-modal-panel" role="dialog" aria-modal="true" aria-labelledby="articleModalTitle">
+    <button type="button" id="articleModalClose" class="article-modal-close" aria-label="Close article">&times;</button>
+    <img id="articleModalImage" src="" alt="" class="w-full h-56 sm:h-72 object-cover">
+    <div class="p-7 sm:p-10">
+      <p id="articleModalCategory" class="text-kpmred font-display font-semibold text-xs tracking-[0.16em] mb-3"></p>
+      <h2 id="articleModalTitle" class="font-display font-bold text-2xl sm:text-3xl text-kpmnavy leading-tight mb-4"></h2>
+      <div class="flex flex-wrap gap-3 text-sm text-gray-500 mb-6"><time id="articleModalDate"></time><span aria-hidden="true">|</span><span id="articleModalAuthor"></span></div>
+      <div id="articleModalContent" class="space-y-4 text-gray-600 leading-relaxed"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-[#071c2c] text-gray-300 pt-16 pb-8">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-white/10">
+      <div>
+        <img src="images/logo.jpeg" alt="The PropertyScope logo" class="h-11 w-auto mb-5 rounded bg-white p-1.5">
+        <p class="text-sm leading-relaxed text-gray-400">A leading real estate media, marketing, and research platform promoting transparency and sustainable growth across Kano's property sector.</p>
+      </div>
+      <div>
+        <h5 class="font-display font-semibold text-white mb-5 text-sm tracking-wide">QUICK LINKS</h5>
+        <ul class="space-y-3 text-sm">
+          <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+          <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
+          <li><a href="services.html" class="hover:text-white transition-colors">Our Services</a></li>
+          <li><a href="news.html" class="hover:text-white transition-colors">News &amp; Insights</a></li>
+          <li><a href="gallery.html" class="hover:text-white transition-colors">Gallery</a></li>
+          <li><a href="contact.html" class="hover:text-white transition-colors">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="font-display font-semibold text-white mb-5 text-sm tracking-wide">SERVICES</h5>
+        <ul class="space-y-3 text-sm">
+          <li><a href="services.html#news-journalism" class="hover:text-white transition-colors">News &amp; Journalism</a></li>
+          <li><a href="services.html#marketing-advertising" class="hover:text-white transition-colors">Property Marketing</a></li>
+          <li><a href="services.html#research-intelligence" class="hover:text-white transition-colors">Market Research</a></li>
+          <li><a href="services.html#digital-marketplace" class="hover:text-white transition-colors">Digital Marketplace</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="font-display font-semibold text-white mb-5 text-sm tracking-wide">CONTACT</h5>
+        <ul class="space-y-3 text-sm text-gray-400">
+          <li>Kano, Nigeria</li>
+          <li>thepropertyscope@gmail.com</li>
+          <li>+234 8162934937</li>
+        </ul>
+      </div>
+    </div>
+    <div class="pt-8 flex flex-wrap items-center justify-between gap-4 text-xs text-gray-500">
+      <p>&copy; <span id="currentYear"></span> PropertyScope Communications Ltd. All rights reserved.</p>
+      <p>Transforming Real Estate for Prosperity</p>
+    </div>
+  </div>
+</footer>
+
+<button id="backToTop" class="back-to-top" aria-label="Back to top">
+  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"/></svg>
+</button>
+
+<script src="js/app.js"></script>
+</body>
+</html>
